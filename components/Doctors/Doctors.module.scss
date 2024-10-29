@@ -1,0 +1,94 @@
+$mwContainer: 1400px;
+$md1: $mwContainer + 12px;
+$md2: 992.98px;
+$md3: 767.98px;
+$md4: 479.98px;
+$fontfamily: "PT-Sans-regular";
+
+.doctors {
+  padding: 70px 0 0 0;
+  &__header {
+    margin: 0px 0px 20px 0px;
+    display: flex;
+    @media (max-width: $md3) {
+      display: block;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 20px;
+    flex: 0 1 25%;
+    padding: 0 20px 0 0;
+    @media (max-width: $md2) {
+      flex: 0 1 50%;
+    }
+    @media (max-width: $md3) {
+      display: block;
+      padding: 0px 0px 15px 0px;
+    }
+  }
+  &__photo {
+    flex: 0 1 75%;
+    position: relative;
+    height: 350px;
+    @media (max-width: $md2) {
+      flex: 0 1 50%;
+      height: 280px;
+    }
+    @media (max-width: $md3) {
+      height: 220px;
+    }
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+  }
+  &__bottom {
+  }
+  &__block {
+  }
+}
+
+.block {
+  margin: 0px 0px 15px 0px;
+  &__specialization {
+    color: rgb(240, 142, 68);
+    margin: 0px 0px 10px 0px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.item {
+  margin: 0px 15px 8px 0px;
+  &__photo {
+    margin: 0px 0px 5px 0px;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+    aspect-ratio: 4/3;
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      transition: all 0.3s ease 0s;
+      &:hover {
+        scale: 1.2;
+      }
+    }
+  }
+  &__name {
+    font-size: 16px;
+  }
+}

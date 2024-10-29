@@ -1,0 +1,38 @@
+.specialization {
+  margin: 0px 0px 15px 0px;
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0px 0px 8px 0px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    cursor: pointer;
+    padding: 7px 14px;
+    margin: 0px 10px 10px 0px;
+    border-radius: 5px;
+    background-color: var(--tg-theme-hint-color);
+    color: var(--tg-theme-bg-color);
+    transition: all 0.3s ease 0s;
+    font-size: 16px;
+    &.browser {
+      background-color: #708499;
+      color: #17212b;
+      &:hover {
+        background-color: rgb(240, 142, 68);
+      }
+      &_active {
+        background-color: rgb(240, 142, 68);
+      }
+    }
+    &:hover {
+      background-color: rgb(240, 142, 68);
+    }
+    &_active {
+      background-color: rgb(240, 142, 68);
+    }
+  }
+}

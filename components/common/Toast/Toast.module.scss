@@ -1,0 +1,31 @@
+$mwContainer: 1400px;
+$md1: $mwContainer + 12px;
+$md2: 992.98px;
+$md3: 767.98px;
+$md4: 479.98px;
+$fontfamily: "PT-Sans-regular";
+
+.toast {
+  background-color: rgb(240, 142, 68);
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transition: all 0.3s ease 0s;
+  z-index: 25;
+  transform: translate(-50%, 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--tg-theme-bg-color);
+  @media (max-width: $md4) {
+    width: 100%;
+  }
+  &.open {
+    transform: translate(-50%, 0px);
+  }
+  span {
+  }
+}

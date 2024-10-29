@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "PT-Sans-regular";
+  src: url("./../fonts/PTSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "PT-Sans-regular-bold";
+  src: url("./../fonts/PTSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "PT-Sans-italic-bold";
+  src: url("./../fonts/PTSans-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "PT-Sans-italic";
+  src: url("./../fonts/PTSans-Italic.ttf");
+}
+
+$minwidth: 320px;
+$mw: 1600px;
+$mwContainer: 1400px;
+$md1: $mwContainer + 12px;
+$md2: 992.98px;
+$md3: 767.98px;
+$md4: 479.98px;
+$fontfamily: "PT-Sans-regular";
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: inherit;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: $minwidth;
+  position: relative;
+  width: 100%;
+  color: #fff;
+}
+
+body {
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  font-family: $fontfamily;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: $fontfamily;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  background-color: var(--tg-theme-bg-color);
+  color: var(--tg-theme-text-color);
+  &.lock {
+    overflow: hidden;
+  }
+  &.browser {
+    background-color: #17212b;
+  }
+}
+
+*:focus-visible {
+  outline: 2px dashed #6ab2f2;
+  outline-offset: 2px;
+}
+
+div:focus-visible,
+span:focus-visible,
+p:focus-visible,
+button:focus-visible,
+a:focus-visible,
+img:focus-visible {
+  outline: 2px dashed #6ab2f2;
+  outline-offset: 2px;
+}

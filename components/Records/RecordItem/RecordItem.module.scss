@@ -1,0 +1,31 @@
+$mwContainer: 1400px;
+$md1: $mwContainer + 12px;
+$md2: 992.98px;
+$md3: 767.98px;
+$md4: 479.98px;
+$fontfamily: "PT-Sans-regular";
+
+.record {
+  margin: 0px 0px 10px 0px;
+  p {
+    font-size: 16px;
+    margin: 0px 0px 5px 0px;
+    span {
+      color: rgb(240, 142, 68);
+      font-weight: 700;
+    }
+  }
+  &__delete {
+    display: block;
+    padding: 7px 14px;
+    font-weight: 700;
+    background-color: rgb(240, 142, 68);
+    font-size: 16px;
+    transition: all 0.3s ease 0s;
+    border-radius: 5px;
+    color: var(--tg-theme-bg-color);
+    &:hover {
+      background-color: rgb(167, 79, 13);
+    }
+  }
+}

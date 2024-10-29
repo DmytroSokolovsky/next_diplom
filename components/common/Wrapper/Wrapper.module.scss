@@ -1,0 +1,16 @@
+$mwContainer: 1400px;
+$md1: $mwContainer + 12px;
+$md2: 992.98px;
+$md3: 767.98px;
+$md4: 479.98px;
+$fontfamily: "PT-Sans-regular";
+
+.main {
+  flex: 1 0 auto;
+}
+
+.container {
+  max-width: $mwContainer;
+  margin: 0px auto;
+  padding: 0 10px;
+}

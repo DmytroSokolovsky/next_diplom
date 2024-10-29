@@ -1,0 +1,20 @@
+$mwContainer: 1400px;
+$md1: $mwContainer + 12px;
+$md2: 992.98px;
+$md3: 767.98px;
+$md4: 479.98px;
+$fontfamily: "PT-Sans-regular";
+
+.records {
+  padding: 70px 0 0 0;
+  &__title {
+    font-size: 18px;
+    margin: 0px 0px 10px 0px;
+    font-weight: 900;
+  }
+  &__list {
+  }
+  &__no {
+    font-size: 16px;
+  }
+}

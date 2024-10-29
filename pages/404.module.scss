@@ -1,0 +1,24 @@
+$mwContainer: 1400px;
+$md1: $mwContainer + 12px;
+$md2: 992.98px;
+$md3: 767.98px;
+$md4: 479.98px;
+$fontfamily: "PT-Sans-regular";
+
+.error {
+  padding: 70px 0 0 0;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  span {
+    color: rgb(240, 142, 68);
+    font-weight: 700;
+  }
+  &.browser {
+    color: #fff;
+    span {
+      color: rgb(240, 142, 68);
+      font-weight: 700;
+    }
+  }
+}
